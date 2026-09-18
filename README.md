@@ -130,7 +130,7 @@ Sanitized excerpts live under [`snippets/`](./snippets).
 
 ## Media
 
-Place scrubbed assets under [`MEDIA/`](./MEDIA):
+Demo media showcasing the ops UI and remote control flow:
 
 - Dashboard overview (accounts + ALL view)
 - Trading journal lifecycle expand (settings / conditions / screenshots)
