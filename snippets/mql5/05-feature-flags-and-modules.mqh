@@ -50,7 +50,7 @@ void exampleInitHooks()
 #endif
 
 #ifdef TradeDayRules_Included
-   // checkMinTradingDayRules();   // compliance surface — formulas private
+   // checkMinTradingDayRules();   // compliance module hook
 #endif
   }
 

@@ -69,9 +69,9 @@ EA root (.mq5 entry)
 │   ├── orders / positions / trade monitor
 │   ├── sessions / news
 │   └── cloud uplink + remote commands
-└── <Strategy>/            ← MarketWatch/ or SRTrend/ only
+└── <Strategy>/            ← per-EA strategy plugin
     ├── models
-    ├── setup / monitor    ← PRIVATE (not in this repo)
+    ├── setup / monitor
     └── EA cloud adapter hooks
 ```
 
@@ -104,7 +104,7 @@ Strategy code is invoked only through plugin hooks. The public snippets stub tho
 The Accounts Dashboard journal UI does not hard-code one EA’s payload shape.
 
 1. `EaJournalAdapter` defines parse + display section contracts
-2. Per-EA adapters implement Market Watch / SR Trend display mapping
+2. Per-EA adapters map each product’s settings/conditions into shared display sections
 3. A registry resolves by EA name, with a safe default fallback
 
 That keeps the journal page stable as new EAs are added.
@@ -120,12 +120,3 @@ Pattern:
 1. Write to `Pending_Chart_Conditions` outbox with a TTL
 2. When the parent trade document appears, flush matching pending rows
 3. Scheduled job purges expired outbox docs
-
----
-
-## What stays private
-
-- Entry/exit alpha (`*Setup*`, `*Monitor*`, aux exit rules)
-- Parameter calibrations and default inputs
-- Harvest / consistency formula internals
-- License material, secrets, real account IDs, production endpoints

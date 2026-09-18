@@ -17,12 +17,7 @@ A multi-account trading operations stack:
 3. **Angular dashboards** provide realtime account oversight, trade journaling, analytics, and remote EA control.
 4. **Command transport** lets operators pause, resume, hibernate, or flatten exposure across charts with acknowledge + dedupe.
 
-Two production EA products share the same platform:
-
-- **Market Watch** — structure-oriented strategy plugin on the shared core
-- **SR Trend** — S&R / regime-oriented strategy plugin on the same core
-
-Strategy *edge* stays private. Platform *engineering* is what this repo showcases.
+All EAs in production share the same platform core, with strategy logic plugged in as modules.
 
 ---
 
@@ -31,7 +26,7 @@ Strategy *edge* stays private. Platform *engineering* is what this repo showcase
 ```mermaid
 flowchart LR
   subgraph Terminals["MT5 Terminals / VPS"]
-    EA["EAs: Market Watch / SR Trend\ncore + strategy plugin"]
+    EA["Production EAs\nshared core + strategy plugin"]
   end
 
   subgraph Cloud["Firebase / GCP"]
@@ -91,7 +86,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for a deeper walkthrough.
 - Order/position façades with broker freeze-zone / stop-level awareness
 - Economic calendar blackout windows
 - Session clocks (Asia / London / NY)
-- Prop-firm style **compliance surface** as a module (formulas private)
+- **Compliance rules** as a modular surface (day rules, consistency checks, trade-window constraints)
 - Remote ops: `PAUSE_EA`, `RESUME_EA`, hibernation, close-all, day shutdown
 
 ### Cloud
@@ -142,22 +137,6 @@ Place scrubbed assets under [`MEDIA/`](./MEDIA):
 - EA command panel issuing pause/resume
 - Short video: EA tick/timer orchestration → journal row appears in the cloud
 - Short video: remote `PAUSE_EA` across charts via GlobalVariables + ack
-
----
-
-## What is intentionally not included
-
-- Entry/exit signal logic and setup/monitor implementations
-- Parameter defaults and calibrated thresholds
-- Prop-firm harvest / consistency formula internals
-- License key material, Firebase secrets, live URLs, real account IDs
-- Full production EA source trees
-
----
-
-## Status / honesty note
-
-Production EAs currently **copy** `Master_Files` per product for MetaEditor packaging. A shared include library is the natural next DRY step; the public architecture already treats that core as one platform.
 
 ---
 
