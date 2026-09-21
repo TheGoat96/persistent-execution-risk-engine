@@ -142,9 +142,16 @@ https://github.com/user-attachments/assets/7ebf3908-81e2-4067-ba91-295292015c10
 
 https://github.com/user-attachments/assets/dae4e6ec-d4fe-4c91-bdbb-954a2102bac8
 
-- Dashboard overview (accounts + ALL view)
+- Dashboard overview
 - Trading journal lifecycle expand (settings / conditions / screenshots)
+- 
+https://github.com/user-attachments/assets/67fa0663-6979-4f3a-bcdf-6670b40b1668
+
+https://github.com/user-attachments/assets/ae49332e-2bb4-439a-9d10-f5a415130ef2
+
 - EA command panel issuing pause/resume
+
+https://github.com/user-attachments/assets/dad13445-7520-475e-8a37-26225a347e55
 
 ---
 
