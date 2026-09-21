@@ -132,11 +132,13 @@ Sanitized excerpts live under [`snippets/`](./snippets).
 
 Demo media showcasing the ops UI and remote control flow:
 
+- Short video: EA tick/timer orchestration → journal row appears in the cloud
 - Dashboard overview (accounts + ALL view)
 - Trading journal lifecycle expand (settings / conditions / screenshots)
 - EA command panel issuing pause/resume
-- Short video: EA tick/timer orchestration → journal row appears in the cloud
-- Short video: remote `PAUSE_EA` across charts via GlobalVariables + ack
-
 ---
+
+
+https://github.com/user-attachments/assets/d89ec0c2-dfe3-4f2f-9a20-e91c5380c486
+
 
