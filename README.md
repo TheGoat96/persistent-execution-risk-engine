@@ -77,7 +77,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for a deeper walkthrough.
 
 ---
 
-## Platform capabilities (public-safe)
+## Platform capabilities
 
 ### EA core
 
