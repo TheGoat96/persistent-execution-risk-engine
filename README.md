@@ -144,7 +144,7 @@ https://github.com/user-attachments/assets/dae4e6ec-d4fe-4c91-bdbb-954a2102bac8
 
 - Dashboard overview
 - Trading journal lifecycle expand (settings / conditions / screenshots)
-- 
+
 https://github.com/user-attachments/assets/67fa0663-6979-4f3a-bcdf-6670b40b1668
 
 https://github.com/user-attachments/assets/ae49332e-2bb4-439a-9d10-f5a415130ef2
