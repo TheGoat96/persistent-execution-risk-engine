@@ -1,4 +1,4 @@
-# Persistent Capital — Trading Operations Platform (Showcase)
+# Persistent Capital — Trading Operations Platform
 
 Modular MetaTrader 5 Expert Advisor core + Firebase cloud telemetry + Angular ops dashboards.
 
