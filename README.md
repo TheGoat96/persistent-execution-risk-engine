@@ -140,6 +140,3 @@ Demo media showcasing the ops UI and remote control flow:
 
 ---
 
-## Disclaimer
-
-See [DISCLAIMER.md](./DISCLAIMER.md). Educational / portfolio material only. Not financial advice.
