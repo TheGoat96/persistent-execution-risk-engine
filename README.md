@@ -1,4 +1,4 @@
-# Persistent Capital — Trading Operations Platform
+# Persistent-Execution-Risk-Engine
 
 Modular MetaTrader 5 Expert Advisor core + Firebase cloud telemetry + Angular ops dashboards.
 
